@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact &amp; Blogs</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .blog-card:hover .purple-circle {
+            transform: scale(25);
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-highest": "#e9e0ea",
+                    "secondary": "#4f44d6",
+                    "primary": "#3b0069",
+                    "secondary-fixed-dim": "#c4c0ff",
+                    "on-primary-container": "#c68dff",
+                    "primary-fixed-dim": "#ddb8ff",
+                    "surface-container-low": "#faf1fb",
+                    "error-container": "#ffdad6",
+                    "on-secondary-fixed-variant": "#3929c0",
+                    "tertiary": "#1f166c",
+                    "on-primary": "#ffffff",
+                    "secondary-container": "#6960f0",
+                    "primary-fixed": "#f0dbff",
+                    "on-secondary-container": "#fffbff",
+                    "inverse-surface": "#332f36",
+                    "surface-container": "#f4ebf5",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-dim": "#e0d7e1",
+                    "github-border": "#6C63FF",
+                    "on-tertiary": "#ffffff",
+                    "progress-track": "#F3EFEF",
+                    "inverse-on-surface": "#f7eef8",
+                    "blog-title": "#262626",
+                    "primary-container": "#55198b",
+                    "error": "#ba1a1a",
+                    "on-secondary-fixed": "#110068",
+                    "on-surface-variant": "#4c4451",
+                    "on-error-container": "#93000a",
+                    "tertiary-container": "#363082",
+                    "tertiary-fixed-dim": "#c4c0ff",
+                    "social-github": "#333333",
+                    "outline-variant": "#cec3d3",
+                    "surface-variant": "#e9e0ea",
+                    "on-tertiary-fixed": "#130562",
+                    "surface-light": "#F5F2F4",
+                    "dark-bg": "#171C28",
+                    "on-primary-fixed": "#2c0051",
+                    "social-linkedin": "#0E76A8",
+                    "surface": "#fff7fe",
+                    "tertiary-fixed": "#e3dfff",
+                    "inverse-primary": "#ddb8ff",
+                    "outline": "#7d7482",
+                    "on-surface": "#1e1a21",
+                    "surface-container-high": "#eee5f0",
+                    "secondary-fixed": "#e3dfff",
+                    "on-secondary": "#ffffff",
+                    "card-description": "#666666",
+                    "button-hover": "#8C43CE",
+                    "on-tertiary-container": "#a29df6",
+                    "on-background": "#1e1a21",
+                    "on-primary-fixed-variant": "#612897",
+                    "background": "#fff7fe",
+                    "surface-tint": "#7a43b1",
+                    "surface-bright": "#fff7fe",
+                    "on-error": "#ffffff",
+                    "subtitle-text": "#868E96",
+                    "on-tertiary-fixed-variant": "#413b8e",
+                    "social-twitter": "#1DA1F2"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "container-width": "90%",
+                    "padding-card": "1.5rem",
+                    "section-gap-md": "2rem",
+                    "section-gap-lg": "4rem",
+                    "card-gap": "1rem",
+                    "gutter-blog": "32px",
+                    "padding-button": "13px 22px"
+            },
+            "fontFamily": {
+                    "body-md": ["Plus Jakarta Sans"],
+                    "label-caps": ["Plus Jakarta Sans"],
+                    "button-text": ["Plus Jakarta Sans"],
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "hero-title": ["Plus Jakarta Sans"],
+                    "card-title-lg": ["Plus Jakarta Sans"],
+                    "section-heading": ["Plus Jakarta Sans"],
+                    "contact-title": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "body-md": ["1rem", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "label-caps": ["0.75rem", {"letterSpacing": "0.05em", "fontWeight": "700"}],
+                    "button-text": ["1rem", {"fontWeight": "700"}],
+                    "body-lg": ["30px", {"lineHeight": "40px", "fontWeight": "400"}],
+                    "hero-title": ["70px", {"lineHeight": "1.1", "fontWeight": "700"}],
+                    "card-title-lg": ["25px", {"lineHeight": "1.3", "fontWeight": "700"}],
+                    "section-heading": ["56px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                    "contact-title": ["65px", {"lineHeight": "1.1", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background font-body-md text-on-surface">
+<!-- TopAppBar -->
+<header class="sticky top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-100 dark:border-slate-800 shadow-[0_10px_30px_-15px_rgba(0,0,0,0.1)]">
+<nav class="flex justify-between items-center max-w-[90%] mx-auto py-4 px-6">
+<div class="text-xl font-extrabold tracking-tighter text-purple-800 dark:text-purple-300 font-['Plus_Jakarta_Sans'] flex items-center"><i class="italic font-display">&lt;Do Kim Hoan /&gt;</i></div>
+<div class="hidden md:flex items-center gap-8 font-['Plus_Jakarta_Sans'] font-medium text-sm tracking-tight">
+<a class="text-slate-600 dark:text-slate-400 hover:text-purple-600 dark:hover:text-purple-300 transition-colors" href="#">Skills</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-purple-600 dark:hover:text-purple-300 transition-colors" href="#">Experience</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-purple-600 dark:hover:text-purple-300 transition-colors" href="#">Projects</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-purple-600 dark:hover:text-purple-300 transition-colors" href="#">Blog</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-purple-600 dark:hover:text-purple-300 transition-colors" href="#">Contact</a>
+</div>
+<button class="bg-primary-container text-on-primary px-6 py-2 rounded-lg font-bold hover:scale-105 active:scale-95 transition-all shadow-lg shadow-primary-container/20 flex items-center gap-2"><span class="material-symbols-outlined text-lg leading-none">download</span>
+                Resume</button>
+</nav>
+</header>
+<main class="max-w-[90%] mx-auto py-12 space-y-20">
+<!-- Blog Section -->
+<section id="blogs">
+<div class="flex flex-col md:flex-row gap-12 items-start mb-12">
+<div class="md:w-1/3">
+<h2 class="font-section-heading text-section-heading text-primary mb-4">Latest Insights</h2>
+<p class="text-subtitle-text text-body-md max-w-sm">Exploring the intersection of modern architecture, clean code, and user experience design.</p>
+</div>
+<div class="md:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Blog Card 1 -->
+<article class="blog-card relative group overflow-hidden bg-white rounded-xl shadow-[0_10px_30px_-15px_rgba(0,0,0,0.1)] transition-all duration-500 hover:-translate-y-2">
+<div class="purple-circle absolute -bottom-4 -right-4 w-12 h-12 bg-primary rounded-full transition-transform duration-700 ease-in-out -z-0 opacity-5"></div>
+<div class="relative z-10">
+<div class="h-48 overflow-hidden">
+<img alt="Code editor background" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Modern code editor interface with vibrant syntax highlighting on a large monitor in a dimly lit minimalist office" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFW9EoHXhAEQGm7zcrNDpGMHwN027lOQ4qtxpMpraxQA4ZieiHIMex9106Kw5Fu-6F9sewbbOh_wXHlDrgfegAomHpgxe0jU9wvHCoJRGByh78egt3LHGklXEwyq0Ty7hTRo7nb6zAIQU9QMG06s4i4Qg8fMNjkxFCEYwm8XJOEsBPiABZLzBaRs0svcE8a33DeuKv6pv1BfNM2HTGTz6ya7lT-PO9Mf7I1tab65e46r8JchXytw23yprLhp2vRR_upUGTTmVE"/>
+</div>
+<div class="p-6">
+<span class="font-label-caps text-label-caps text-secondary mb-2 block">ARCHITECTURE</span>
+<h3 class="font-card-title-lg text-card-title-lg text-blog-title mb-3 group-hover:text-white transition-colors duration-500">The Future of React Server Components</h3>
+<p class="text-card-description text-body-md group-hover:text-white/80 transition-colors duration-500">Deep dive into the paradigm shift of rendering logic and how it affects core web vitals.</p>
+<div class="mt-6 flex items-center gap-2 text-primary group-hover:text-white transition-colors duration-500 font-bold">
+                                    Read Post <span class="material-symbols-outlined">arrow_forward</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Blog Card 2 -->
+<article class="blog-card relative group overflow-hidden bg-white rounded-xl shadow-[0_10px_30px_-15px_rgba(0,0,0,0.1)] transition-all duration-500 hover:-translate-y-2">
+<div class="purple-circle absolute -bottom-4 -right-4 w-12 h-12 bg-primary rounded-full transition-transform duration-700 ease-in-out -z-0 opacity-5"></div>
+<div class="relative z-10">
+<div class="h-48 overflow-hidden">
+<img alt="UI Design desk" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Professional designer workspace with high-end drawing tablet, color swatches, and clean white peripherals in natural morning sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUFydPsh0R39yYLJNOkifjFdBRWg3HC18jm_6RoyhWF73AxezahEGyxdJ3xbd6VgJ1J-14tHYq5z8XZfgIGJa-CZJYpk2qcAAqsrVlZlN8ltgtRCQoCazqXTi3G7cU1-euyFpOcBxWIRAs1V96dM6W5zHG4OdmUsyn8jPXSGHyVqotASB8nnUsbI6CeA3Qs_py2wOx29_ZCuI41cKsbsjvA2uGZRUqcvT3bDzC4ezSf8rlQc0MnjPrbqwyeDd1Vevy5eBlsgcm"/>
+</div>
+<div class="p-6">
+<span class="font-label-caps text-label-caps text-secondary mb-2 block">DESIGN SYSTEM</span>
+<h3 class="font-card-title-lg text-card-title-lg text-blog-title mb-3 group-hover:text-white transition-colors duration-500">Scaling Tailwind for Enterprise Apps</h3>
+<p class="text-card-description text-body-md group-hover:text-white/80 transition-colors duration-500">Best practices for maintaining consistency across a fleet of internal dashboard products.</p>
+<div class="mt-6 flex items-center gap-2 text-primary group-hover:text-white transition-colors duration-500 font-bold">
+                                    Read Post <span class="material-symbols-outlined">arrow_forward</span>
+</div>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-20 border-t border-surface-container-highest" id="contact">
+<div class="flex flex-col md:flex-row gap-16 items-center">
+<div class="md:w-1/2">
+<h2 class="font-contact-title text-contact-title text-primary mb-8">Contact Me</h2>
+<div class="space-y-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div>
+<p class="text-subtitle-text font-label-caps uppercase">Email</p>
+<p class="font-card-title-lg text-on-surface">hello@devportfolio.com</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">call</span>
+</div>
+<div>
+<p class="text-subtitle-text font-label-caps uppercase">Phone</p>
+<p class="font-card-title-lg text-on-surface">+1 (555) 0123-4567</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div>
+<p class="text-subtitle-text font-label-caps uppercase">Location</p>
+<p class="font-card-title-lg text-on-surface">San Francisco, CA</p>
+</div>
+</div>
+</div>
+<!-- Social Icons -->
+<div class="mt-12 flex gap-4">
+<a class="w-12 h-12 rounded-full bg-social-github flex items-center justify-center text-white transition-all hover:scale-110 hover:-translate-y-1 shadow-lg" href="#" title="Github">
+<span class="material-symbols-outlined">terminal</span>
+</a>
+<a class="w-12 h-12 rounded-full bg-social-linkedin flex items-center justify-center text-white transition-all hover:scale-110 hover:-translate-y-1 shadow-lg" href="#" title="LinkedIn">
+<span class="material-symbols-outlined">share</span>
+</a>
+<a class="w-12 h-12 rounded-full bg-social-twitter flex items-center justify-center text-white transition-all hover:scale-110 hover:-translate-y-1 shadow-lg" href="#" title="Twitter">
+<span class="material-symbols-outlined">chat_bubble</span>
+</a>
+</div>
+</div>
+<div class="md:w-1/2 w-full">
+<form class="bg-white p-10 rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.05)] border border-surface-container-high space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block text-sm font-bold text-on-surface mb-2">Name</label>
+<input class="w-full bg-surface-container-lowest border-outline-variant rounded-lg p-3 focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="John Doe" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-bold text-on-surface mb-2">Email</label>
+<input class="w-full bg-surface-container-lowest border-outline-variant rounded-lg p-3 focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="john@example.com" type="email"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-bold text-on-surface mb-2">Message</label>
+<textarea class="w-full bg-surface-container-lowest border-outline-variant rounded-lg p-3 focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Tell me about your project..." rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary py-4 rounded-lg font-button-text text-button-text uppercase tracking-widest hover:bg-button-hover transition-all active:scale-95 shadow-xl" type="submit">
+                            Send Message
+                        </button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 mt-20 bg-slate-50 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-[90%] mx-auto gap-6">
+<div class="font-['Plus_Jakarta_Sans'] text-xs uppercase tracking-widest font-semibold text-slate-500">
+                © 2024 Crafted with Passion
+            </div>
+<div class="flex gap-8">
+<a class="font-['Plus_Jakarta_Sans'] text-xs uppercase tracking-widest font-semibold text-slate-500 hover:text-purple-600 dark:hover:text-purple-300 transition-all hover:-translate-y-1" href="#">Github</a>
+<a class="font-['Plus_Jakarta_Sans'] text-xs uppercase tracking-widest font-semibold text-slate-500 hover:text-purple-600 dark:hover:text-purple-300 transition-all hover:-translate-y-1" href="#">LinkedIn</a>
+<a class="font-['Plus_Jakarta_Sans'] text-xs uppercase tracking-widest font-semibold text-slate-500 hover:text-purple-600 dark:hover:text-purple-300 transition-all hover:-translate-y-1" href="#">Twitter</a>
+</div>
+</div>
+</footer>
+</body></html>

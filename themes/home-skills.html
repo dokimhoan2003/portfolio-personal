@@ -1,0 +1,264 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Home - Welcome</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-highest": "#e9e0ea",
+                        "secondary": "#4f44d6",
+                        "primary": "#3b0069",
+                        "secondary-fixed-dim": "#c4c0ff",
+                        "on-primary-container": "#c68dff",
+                        "primary-fixed-dim": "#ddb8ff",
+                        "surface-container-low": "#faf1fb",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed-variant": "#3929c0",
+                        "tertiary": "#1f166c",
+                        "on-primary": "#ffffff",
+                        "secondary-container": "#6960f0",
+                        "primary-fixed": "#f0dbff",
+                        "on-secondary-container": "#fffbff",
+                        "inverse-surface": "#332f36",
+                        "surface-container": "#f4ebf5",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-dim": "#e0d7e1",
+                        "github-border": "#6C63FF",
+                        "on-tertiary": "#ffffff",
+                        "progress-track": "#F3EFEF",
+                        "inverse-on-surface": "#f7eef8",
+                        "blog-title": "#262626",
+                        "primary-container": "#55198b",
+                        "error": "#ba1a1a",
+                        "on-secondary-fixed": "#110068",
+                        "on-surface-variant": "#4c4451",
+                        "on-error-container": "#93000a",
+                        "tertiary-container": "#363082",
+                        "tertiary-fixed-dim": "#c4c0ff",
+                        "social-github": "#333333",
+                        "outline-variant": "#cec3d3",
+                        "surface-variant": "#e9e0ea",
+                        "on-tertiary-fixed": "#130562",
+                        "surface-light": "#F5F2F4",
+                        "dark-bg": "#171C28",
+                        "on-primary-fixed": "#2c0051",
+                        "social-linkedin": "#0E76A8",
+                        "surface": "#fff7fe",
+                        "tertiary-fixed": "#e3dfff",
+                        "inverse-primary": "#ddb8ff",
+                        "outline": "#7d7482",
+                        "on-surface": "#1e1a21",
+                        "surface-container-high": "#eee5f0",
+                        "secondary-fixed": "#e3dfff",
+                        "on-secondary": "#ffffff",
+                        "card-description": "#666666",
+                        "button-hover": "#8C43CE",
+                        "on-tertiary-container": "#a29df6",
+                        "on-background": "#1e1a21",
+                        "on-primary-fixed-variant": "#612897",
+                        "background": "#fff7fe",
+                        "surface-tint": "#7a43b1",
+                        "surface-bright": "#fff7fe",
+                        "on-error": "#ffffff",
+                        "subtitle-text": "#868E96",
+                        "on-tertiary-fixed-variant": "#413b8e"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-width": "90%",
+                        "padding-card": "1.5rem",
+                        "section-gap-md": "2rem",
+                        "section-gap-lg": "4rem",
+                        "card-gap": "1rem",
+                        "gutter-blog": "32px",
+                        "padding-button": "13px 22px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Plus Jakarta Sans"],
+                        "label-caps": ["Plus Jakarta Sans"],
+                        "button-text": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "hero-title": ["Plus Jakarta Sans"],
+                        "card-title-lg": ["Plus Jakarta Sans"],
+                        "section-heading": ["Plus Jakarta Sans"],
+                        "contact-title": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "body-md": ["1rem", {"lineHeight": "1.5", "fontWeight": "400"}],
+                        "label-caps": ["0.75rem", {"letterSpacing": "0.05em", "fontWeight": "700"}],
+                        "button-text": ["1rem", {"fontWeight": "700"}],
+                        "body-lg": ["30px", {"lineHeight": "40px", "fontWeight": "400"}],
+                        "hero-title": ["70px", {"lineHeight": "1.1", "fontWeight": "700"}],
+                        "card-title-lg": ["25px", {"lineHeight": "1.3", "fontWeight": "700"}],
+                        "section-heading": ["56px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                        "contact-title": ["65px", {"lineHeight": "1.1", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .active-nav {
+            border-bottom: 2px solid #55198B;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopAppBar -->
+<header class="sticky top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-100 dark:border-slate-800 shadow-[0_10px_30px_-15px_rgba(0,0,0,0.1)]">
+<nav class="flex justify-between items-center max-w-[90%] mx-auto py-4 px-6">
+<div class="text-xl font-extrabold tracking-tighter text-purple-800 dark:text-purple-300 font-['Plus_Jakarta_Sans'] flex items-center" style=""><i class="italic font-display">&lt;Do Kim Hoan /&gt;</i></div>
+<div class="hidden md:flex items-center gap-8 font-['Plus_Jakarta_Sans'] font-medium text-sm tracking-tight">
+<a class="text-slate-600 dark:text-slate-400 hover:text-purple-600 dark:hover:text-purple-300 transition-colors" href="#" style="">Skills</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-purple-600 dark:hover:text-purple-300 transition-colors" href="#" style="">Experience</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-purple-600 dark:hover:text-purple-300 transition-colors" href="#" style="">Projects</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-purple-600 dark:hover:text-purple-300 transition-colors" href="#" style="">Blog</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-purple-600 dark:hover:text-purple-300 transition-colors" href="#" style="">Contact</a>
+</div>
+<button class="bg-primary-container text-on-primary px-6 py-2 rounded-lg font-bold hover:scale-105 active:scale-95 transition-all shadow-lg shadow-primary-container/20 flex items-center gap-2" style=""><span class="material-symbols-outlined text-lg leading-none" style="">download</span>
+                Resume</button>
+</nav>
+</header>
+<main>
+<!-- Hero Section 5.2 -->
+<section class="max-w-[90%] mx-auto py-20 lg:py-32 flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
+<div class="flex-1 space-y-8 text-center lg:text-left">
+<h1 class="font-hero-title text-hero-title text-on-background" style="">
+                    Hi all, I'm Hoan&nbsp;<span class="inline-block animate-bounce text-6xl" style="">👋</span>
+</h1>
+<p class="text-subtitle-text text-body-md max-w-2xl mx-auto lg:mx-0 leading-relaxed" style="">
+                    A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks.
+                </p>
+<!-- Social Links -->
+<div class="flex justify-center lg:justify-start gap-4">
+<a class="w-10 h-10 flex items-center justify-center bg-social-github text-white rounded-full hover:-translate-y-1 transition-transform" href="#" style="">
+<span class="material-symbols-outlined" data-icon="terminal" style="">terminal</span>
+</a>
+<a class="w-10 h-10 flex items-center justify-center bg-social-linkedin text-white rounded-full hover:-translate-y-1 transition-transform" href="#" style="">
+<span class="material-symbols-outlined" data-icon="work" style="">work</span>
+</a>
+<a class="w-10 h-10 flex items-center justify-center bg-social-twitter text-white rounded-full hover:-translate-y-1 transition-transform" href="#" style="">
+<span class="material-symbols-outlined" data-icon="share" style="">share</span>
+</a>
+</div>
+<div class="flex flex-wrap justify-center lg:justify-start gap-4 pt-4">
+<button class="bg-primary-container text-on-primary px-8 py-4 rounded-lg font-button-text text-button-text uppercase tracking-wider hover:bg-button-hover transition-all shadow-xl shadow-primary-container/30" style="">
+                        CONTACT ME
+                    </button>
+<button class="bg-white border-2 border-primary-container text-primary-container px-8 py-4 rounded-lg font-button-text text-button-text uppercase tracking-wider hover:bg-primary-container hover:text-on-primary transition-all shadow-lg" style="">
+                        SEE MY RESUME
+                    </button>
+</div>
+</div>
+<div class="flex-1 w-full max-w-xl">
+<div class="relative group">
+<div class="absolute -inset-4 bg-primary-container/10 rounded-full blur-3xl group-hover:bg-primary-container/20 transition-all"></div>
+<img alt="A young man focused on coding at his desk, modern home office setup with soft purple neon lighting, cinematic lighting, high quality, professional developer aesthetic, matching the color palette #55198B." class="relative rounded-2xl w-full h-auto object-cover" data-alt="A young man focused on coding at his desk, modern home office setup with soft purple neon lighting, cinematic lighting, high quality, professional developer aesthetic, matching the color palette #55198B." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIj-QfWRIEVd3gzylh7dHF8488MCb_aP6TOFfLU1RsQUp-7L0TMCrD4J2pOE6T9_i8Xy_sXri226uxmHeAZeRNsQs6W1mTvWtm03kD1Qq-BE8Ep4lYknZkOUMzyLRsQSIYe9rZlq4ioXv6aCK12JwxANDkHo1fXrNUiCwz4jNwTpuEkW78we21m4XRwoKV1cPbgAFhrOAcs7_QJ6nqlPBQwCDhmpRQpJadpM3fbUpz2e1VxSsr54XHut4WaT1Eb4qhsEoHS0Pr" style="">
+</div>
+</div>
+</section>
+<!-- Skills Section 5.3 -->
+<section class="max-w-[90%] mx-auto py-20 lg:py-32" id="skills">
+<h2 class="font-section-heading text-section-heading text-on-background mb-12 lg:mb-20 text-center lg:text-left" style="">
+                What I do
+            </h2>
+<div class="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
+<div class="flex-1 order-2 lg:order-1">
+<div class="relative h-96 w-full bg-surface-container-low rounded-3xl overflow-hidden shadow-inner flex items-center justify-center">
+<img alt="Software Engineering Illustration" class="w-4/5 h-auto rounded-xl shadow-2xl" data-alt="clean minimal desk setup with a laptop showing lines of code, soft purple ambient lighting and indoor plants" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUV41JTCvDo-QLX3H3FEQBopHpVI_zbrk0gRl6Xlxntd2kjaBRtVFrMyxKmZPbKLBqepEL7ejLx8bA0ebwytamApVnHbfQKgNDmqCawSjbMLSQrWK5-ys450JCRlhd8SswDvKIfyOav3QtRK2AniHtSHUE_vD25cLcYCa0g8IWlmm_7nQoeXpfaoZSuzBkMPPwXuDI_u477DPuh5sxmgOeBOEqjYErDMraw331Wr1L69XYHbSm6aP0E_2_y_drplXx5jYw3fDO" style="">
+</div>
+</div>
+<div class="flex-1 order-1 lg:order-2 space-y-10">
+<div class="space-y-6">
+<h3 class="font-card-title-lg text-card-title-lg text-primary leading-tight" style="">
+                            Full Stack Development
+                        </h3>
+<!-- Skills Grid -->
+<div class="grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-5 gap-6">
+<div class="flex flex-col items-center gap-2 group">
+<div class="w-14 h-14 flex items-center justify-center bg-surface-container-highest rounded-xl group-hover:scale-110 group-hover:bg-primary-fixed transition-all duration-300">
+<span class="material-symbols-outlined text-3xl text-primary" data-icon="html" style="">html</span>
+</div>
+<span class="text-xs font-bold text-slate-500 uppercase" style="">HTML5</span>
+</div>
+<div class="flex flex-col items-center gap-2 group">
+<div class="w-14 h-14 flex items-center justify-center bg-surface-container-highest rounded-xl group-hover:scale-110 group-hover:bg-primary-fixed transition-all duration-300">
+<span class="material-symbols-outlined text-3xl text-primary" data-icon="css" style="">css</span>
+</div>
+<span class="text-xs font-bold text-slate-500 uppercase" style="">CSS3</span>
+</div>
+<div class="flex flex-col items-center gap-2 group">
+<div class="w-14 h-14 flex items-center justify-center bg-surface-container-highest rounded-xl group-hover:scale-110 group-hover:bg-primary-fixed transition-all duration-300">
+<span class="material-symbols-outlined text-3xl text-primary" data-icon="javascript" style="">javascript</span>
+</div>
+<span class="text-xs font-bold text-slate-500 uppercase" style="">JS</span>
+</div>
+<div class="flex flex-col items-center gap-2 group">
+<div class="w-14 h-14 flex items-center justify-center bg-surface-container-highest rounded-xl group-hover:scale-110 group-hover:bg-primary-fixed transition-all duration-300">
+<span class="material-symbols-outlined text-3xl text-primary" data-icon="deployed_code" style="">deployed_code</span>
+</div>
+<span class="text-xs font-bold text-slate-500 uppercase" style="">React</span>
+</div>
+<div class="flex flex-col items-center gap-2 group">
+<div class="w-14 h-14 flex items-center justify-center bg-surface-container-highest rounded-xl group-hover:scale-110 group-hover:bg-primary-fixed transition-all duration-300">
+<span class="material-symbols-outlined text-3xl text-primary" data-icon="storage" style="">storage</span>
+</div>
+<span class="text-xs font-bold text-slate-500 uppercase" style="">SQL</span>
+</div>
+</div>
+<ul class="space-y-4 text-subtitle-text text-body-md">
+<li class="flex items-start gap-3" style="">
+<span class="material-symbols-outlined text-primary mt-1" data-icon="bolt" style="">bolt</span>
+<span class="" style="">Building responsive website front end using React-Redux</span>
+</li>
+<li class="flex items-start gap-3" style="">
+<span class="material-symbols-outlined text-primary mt-1" data-icon="bolt" style="">bolt</span>
+<span class="" style="">Developing mobile applications using React Native and Flutter</span>
+</li>
+<li class="flex items-start gap-3" style="">
+<span class="material-symbols-outlined text-primary mt-1" data-icon="bolt" style="">bolt</span>
+<span class="" style="">Creating application backend in Node, Express &amp; Flask</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 mt-20 bg-slate-50 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-[90%] mx-auto gap-6">
+<div class="font-['Plus_Jakarta_Sans'] text-xs uppercase tracking-widest font-semibold text-slate-500" style="">
+                © 2024 Crafted with Passion
+            </div>
+<div class="flex items-center gap-8">
+<a class="font-['Plus_Jakarta_Sans'] text-xs uppercase tracking-widest font-semibold text-slate-500 hover:text-purple-600 transition-all hover:-translate-y-1" href="#" style="">Github</a>
+<a class="font-['Plus_Jakarta_Sans'] text-xs uppercase tracking-widest font-semibold text-slate-500 hover:text-purple-600 transition-all hover:-translate-y-1" href="#" style="">LinkedIn</a>
+<a class="font-['Plus_Jakarta_Sans'] text-xs uppercase tracking-widest font-semibold text-slate-500 hover:text-purple-600 transition-all hover:-translate-y-1" href="#" style="">Twitter</a>
+</div>
+</div>
+</footer>
+<!-- Mobile Nav Anchor -->
+<div class="md:hidden fixed bottom-6 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-sm">
+<div class="bg-white/90 backdrop-blur-xl rounded-full px-6 py-4 shadow-2xl flex justify-between items-center border border-white/20">
+<a class="text-primary" href="#" style=""><span class="material-symbols-outlined" data-icon="home" data-weight="fill" style="">home</span></a>
+<a class="text-slate-400" href="#skills" style=""><span class="material-symbols-outlined" data-icon="psychology" style="">psychology</span></a>
+<a class="text-slate-400" href="#" style=""><span class="material-symbols-outlined" data-icon="grid_view" style="">grid_view</span></a>
+<a class="text-slate-400" href="#" style=""><span class="material-symbols-outlined" data-icon="mail" style="">mail</span></a>
+</div>
+</div>
+</body></html>
